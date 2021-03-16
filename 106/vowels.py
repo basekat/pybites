@@ -49,5 +49,3 @@ def strip_vowels(text: str) -> Tuple[str, int]:
         else:
             new_text.append(text[i])
     return ("".join(new_text), counter)
-
-print(strip_vowels('hello world'))
