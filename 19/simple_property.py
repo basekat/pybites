@@ -7,12 +7,8 @@ class Promo:
 
     def __init__(self, name, expires):
         self.name = name
-        if NOW > expires:
-            self._expired = True
-        else:
-            self._expired = False
-
+        self.expires = expires
 
     @property
     def expired(self):
-        return self._expired
+        return NOW > self.expires
